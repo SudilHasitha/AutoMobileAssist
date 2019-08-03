@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubMenu">
+
+    <RelativeLayout
+        android:layout_width="395dp"
+        android:layout_height="715dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/backgroundImage2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/bimg2" />
+
+        <ImageView
+            android:id="@+id/backgroundImage3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/bimg3" />
+
+        <ImageView
+            android:id="@+id/backgroundImage4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/bimg4" />
+
+        <ImageView
+            android:id="@+id/backgroundImage5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/bimg5" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="134dp"
+            android:layout_height="275dp"
+            android:layout_alignTop="@+id/backgroundImage5"
+            android:layout_alignEnd="@+id/backgroundImage5"
+            android:layout_alignBottom="@+id/backgroundImage5"
+            android:layout_marginTop="233dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="214dp"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="134dp"
+            android:layout_height="274dp"
+            android:layout_alignStart="@+id/backgroundImage5"
+            android:layout_alignTop="@+id/backgroundImage5"
+            android:layout_alignBottom="@+id/backgroundImage5"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="233dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginBottom="209dp"
+            android:layout_toStartOf="@+id/button4"
+            android:drawableTop="@drawable/createacc"
+            android:text="Button" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

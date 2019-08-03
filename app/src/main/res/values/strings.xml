@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AutoMobileAssist</string>
+    <string name="mainMenuOpt1">Vehicle Sales</string>
+    <string name="mainMenuOpt3">Service Centers And Garages</string>
+    <string name="mainMenuOpt2">Spare parts and accessories</string>
+    <string name="mainMenuOpt4">Emergency and roadside assistance</string>
+    <string name="GarageRegfield1">Name</string>
 </resources>
