@@ -7,4 +7,6 @@
     <string name="GarageRegfield1">Name</string>
     <string name="GarageMenuOpt1">Service Provider</string>
     <string name="GargeMenuOpt2">Search For Service</string>
+    <string name="GarageOwnerMenuOpt1">Register New Garage</string>
+    <string name="GarageOwnerMenuOpt2">View Profile</string>
 </resources>

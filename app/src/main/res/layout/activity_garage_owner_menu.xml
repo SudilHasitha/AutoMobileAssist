@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:alpha="0.6"
-    android:background="@drawable/bimg4"
-    tools:context=".SubMenu">
+    tools:context=".GarageOwnerMenu">
 
     <androidx.gridlayout.widget.GridLayout
         android:layout_width="359dp"
@@ -23,7 +21,7 @@
             android:id="@+id/btnGargeRegister"
             android:layout_width="181dp"
             android:layout_height="match_parent"
-            android:text="@string/GarageMenuOpt1"
+            android:text="@string/GarageOwnerMenuOpt1"
             app:layout_column="0"
             app:layout_row="0" />
 
@@ -31,7 +29,7 @@
             android:id="@+id/btnSearchGarage"
             android:layout_width="181dp"
             android:layout_height="match_parent"
-            android:text="@string/GargeMenuOpt2"
+            android:text="@string/GarageOwnerMenuOpt2"
             app:layout_column="1"
             app:layout_row="0" />
     </androidx.gridlayout.widget.GridLayout>
