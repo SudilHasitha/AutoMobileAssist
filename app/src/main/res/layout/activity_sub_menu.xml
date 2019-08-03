@@ -4,75 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:alpha="0.6"
+    android:background="@drawable/bimg4"
     tools:context=".SubMenu">
 
-    <RelativeLayout
-        android:layout_width="395dp"
-        android:layout_height="715dp"
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="359dp"
+        android:layout_height="318dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.634">
 
-        <androidx.gridlayout.widget.GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
-        <ImageView
-            android:id="@+id/backgroundImage2"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="181dp"
             android:layout_height="match_parent"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/bimg2" />
-
-        <ImageView
-            android:id="@+id/backgroundImage3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/bimg3" />
-
-        <ImageView
-            android:id="@+id/backgroundImage4"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/bimg4" />
-
-        <ImageView
-            android:id="@+id/backgroundImage5"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/bimg5" />
+            android:text="@string/GarageMenuOpt1"
+            app:layout_column="0"
+            app:layout_row="0" />
 
         <Button
             android:id="@+id/button4"
-            android:layout_width="134dp"
-            android:layout_height="275dp"
-            android:layout_alignTop="@+id/backgroundImage5"
-            android:layout_alignEnd="@+id/backgroundImage5"
-            android:layout_alignBottom="@+id/backgroundImage5"
-            android:layout_marginTop="233dp"
-            android:layout_marginEnd="42dp"
-            android:layout_marginBottom="214dp"
-            android:text="Button" />
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="134dp"
-            android:layout_height="274dp"
-            android:layout_alignStart="@+id/backgroundImage5"
-            android:layout_alignTop="@+id/backgroundImage5"
-            android:layout_alignBottom="@+id/backgroundImage5"
-            android:layout_marginStart="45dp"
-            android:layout_marginTop="233dp"
-            android:layout_marginEnd="31dp"
-            android:layout_marginBottom="209dp"
-            android:layout_toStartOf="@+id/button4"
-            android:drawableTop="@drawable/createacc"
-            android:text="Button" />
-
-    </RelativeLayout>
+            android:layout_width="181dp"
+            android:layout_height="match_parent"
+            android:text="@string/GargeMenuOpt2"
+            app:layout_column="1"
+            app:layout_row="0" />
+    </androidx.gridlayout.widget.GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

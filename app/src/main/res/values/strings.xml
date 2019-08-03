@@ -5,4 +5,6 @@
     <string name="mainMenuOpt2">Spare parts and accessories</string>
     <string name="mainMenuOpt4">Emergency and roadside assistance</string>
     <string name="GarageRegfield1">Name</string>
+    <string name="GarageMenuOpt1">Service Provider</string>
+    <string name="GargeMenuOpt2">Search For Service</string>
 </resources>

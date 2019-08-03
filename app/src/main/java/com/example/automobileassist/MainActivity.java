@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         garageBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,GarageRegistrationActivity.class));
+                startActivity(new Intent(MainActivity.this,SubMenu.class));
             }
         });
 
