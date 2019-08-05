@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_animation"
-    tools:context=".GarageOwnerMenu">
+    tools:context=".GarageOwnerMenu"> 
 
     <androidx.gridlayout.widget.GridLayout
         android:layout_width="362dp"
