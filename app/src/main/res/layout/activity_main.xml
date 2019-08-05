@@ -2,95 +2,85 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_animation"
     tools:context=".MainActivity">
 
-    <androidx.gridlayout.widget.GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/bimg6"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="29dp">
-
-    </androidx.gridlayout.widget.GridLayout>
-
-    <Button
-        android:id="@+id/buttonSales"
-        android:layout_width="164dp"
-        android:layout_height="169dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="140dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="2dp"
-        android:alpha="0.9"
-        android:background="@android:color/holo_green_light"
-        android:clickable="true"
-        android:cursorVisible="true"
-        android:drawableLeft="@drawable/sales"
-        android:text="@string/mainMenuOpt1"
-        app:layout_constraintBottom_toTopOf="@+id/buttonGarage"
-        app:layout_constraintEnd_toStartOf="@+id/buttonSpare"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.932" />
-
-    <Button
-        android:id="@+id/buttonGarage"
-        android:layout_width="164dp"
-        android:layout_height="169dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="80dp"
-        android:alpha="0.9"
-        android:background="@android:color/holo_orange_light"
-        android:clickable="false"
-        android:cursorVisible="false"
-        android:drawableLeft="@drawable/garage"
-        android:text="@string/mainMenuOpt3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonEmergency"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSales" />
-
-    <Button
-        android:id="@+id/buttonSpare"
-        android:layout_width="164dp"
-        android:layout_height="169dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="140dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="2dp"
-        android:alpha="0.9"
-        android:background="@android:color/holo_red_light"
-        android:clickable="true"
-        android:cursorVisible="true"
-        android:drawableLeft="@drawable/spare"
-        android:text="@string/mainMenuOpt2"
-        app:layout_constraintBottom_toTopOf="@+id/buttonEmergency"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonSales"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.932" />
-
-    <Button
-        android:id="@+id/buttonEmergency"
-        android:layout_width="164dp"
-        android:layout_height="169dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="80dp"
-        android:alpha="0.9"
-        android:background="@android:color/holo_blue_bright"
-        android:clickable="true"
-        android:cursorVisible="true"
-        android:drawableLeft="@drawable/emergency"
-        android:text="@string/mainMenuOpt4"
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonGarage"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSpare" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonSales"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="fill"
+                android:alpha="0.9"
+                android:background="@android:color/holo_green_light"
+                android:clickable="true"
+                android:cursorVisible="true"
+                android:drawableLeft="@drawable/sales"
+                android:text="@string/mainMenuOpt1"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/buttonSpare"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="fill"
+                android:alpha="0.9"
+                android:background="@android:color/holo_red_light"
+                android:clickable="true"
+                android:cursorVisible="true"
+                android:drawableLeft="@drawable/spare"
+                android:text="@string/mainMenuOpt2"
+                app:layout_column="0"
+                app:layout_row="1" />
+
+            <Button
+                android:id="@+id/buttonGarage"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="fill"
+                android:alpha="0.9"
+                android:background="@android:color/holo_orange_light"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:drawableLeft="@drawable/garage"
+                android:text="@string/mainMenuOpt3"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/buttonEmergency"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="fill"
+                android:alpha="0.9"
+                android:background="@android:color/holo_blue_bright"
+                android:clickable="true"
+                android:cursorVisible="true"
+                android:drawableLeft="@drawable/emergency"
+                android:text="@string/mainMenuOpt4"
+                app:layout_column="1"
+                app:layout_row="1" />
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bimg1"
+        android:duration="8000"></item>
+    <item android:drawable="@drawable/bimg2"
+        android:duration="8000"></item>
+    <item android:drawable="@drawable/bimg3"
+        android:duration="8000"></item>
+    <item android:drawable="@drawable/bimg4"
+        android:duration="8000"></item>
+    <item android:drawable="@drawable/bimg6"
+        android:duration="8000"></item>
+</animation-list>

@@ -2,8 +2,125 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mylayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_animation"
     tools:context=".GarageRegisterForm">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="344dp"
+        android:layout_height="355dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:alpha="0.9"
+        android:background="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_gap"
+                android:layout_marginTop="@dimen/default_gap"
+                android:layout_marginEnd="@dimen/default_gap"
+                android:ems="10"
+                android:hint="Name of the garage or service center"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/default_gap"
+                android:layout_marginTop="@dimen/default_gap"
+                android:layout_marginEnd="@dimen/default_gap"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textPostalAddress" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/default_gap"
+                android:layout_marginTop="@dimen/default_gap"
+                android:layout_marginEnd="@dimen/default_gap"
+                android:ems="10"
+                android:hint="Workshop open time"
+                android:inputType="time" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/default_gap"
+                android:layout_marginTop="@dimen/default_gap"
+                android:layout_marginEnd="@dimen/default_gap"
+                android:hint="Workshop close time"
+                android:inputType="time" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/default_gap"
+                android:layout_marginTop="@dimen/default_gap"
+                android:layout_marginEnd="@dimen/default_gap"
+                android:hint="Country" />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/multiAutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_gap"
+                android:layout_marginTop="@dimen/default_gap"
+                android:layout_marginEnd="@dimen/default_gap"
+                android:hint="Eligible vehicles to service" />
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_gap"
+                android:layout_marginTop="@dimen/default_gap"
+                android:layout_marginEnd="@dimen/default_gap"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_gap"
+                android:layout_marginTop="@dimen/default_gap"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="395dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="41dp"
+                android:text="Button" />
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
