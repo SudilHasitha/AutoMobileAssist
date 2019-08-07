@@ -9,8 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-
+        <activity android:name=".e_service_centers_proflle"></activity>
+        <activity android:name=".find_emergency_service" />
+        <activity android:name=".emergencycenter_register" />
+        <activity android:name=".emergencyservicelogin" />
+        <activity android:name=".emergency_servics_search" />
         <activity android:name=".GarageLoginForm" />
         <activity android:name=".GarageRegisterForm" />
         <activity android:name=".GarageSearch" />
