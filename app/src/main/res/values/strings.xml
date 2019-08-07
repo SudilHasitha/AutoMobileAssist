@@ -9,4 +9,32 @@
     <string name="GargeMenuOpt2">Search For Garage</string>
     <string name="GarageOwnerMenuOpt1">Register New Garage</string>
     <string name="GarageOwnerMenuOpt2">View Profile</string>
+    <string name="search_emergency_service">Search Emergency Service</string>
+    <string name="login_register">Login / Register</string>
+    <string name="title_activity_emergency_service_center_login">emergency_service_center_login
+    </string>
+    <string name="new_service_center_register_here">New Service center..? Register Here</string>
+    <string name="email_or_id">Email or ID</string>
+    <string name="password">Passwordem</string>
+    <string name="submit">Submitfind</string>
+    <string name="enter_your_location">Enter Your Locationfind</string>
+    <string name="center_name">Center Nameems</string>
+    <string name="garageFormField1">Name of the garage or service center</string>
+    <string name="garageFormField2">Address</string>
+    <string name="garageFormField3">Workshop open time</string>
+    <string name="garageFormField4">Workshop close time</string>
+    <string name="garageFormField5">Country</string>
+    <string name="garageFormField6">Eligible vehicles to service</string>
+    <string name="garageFormField7">User name</string>
+    <string name="garageFormField8">Password</string>
+    <string name="btnGarageRegister">Register</string>
+    <string name="garageFF1">Garage Name</string>
+    <string name="garageFF2">Address</string>
+    <string name="garageFF3">Opening time</string>
+    <string name="garageFF4">Closing Time</string>
+    <string name="garageFF5">Country</string>
+    <string name="garageFF6">Eligible Vehicles</string>
+    <string name="garageFF7">Profile Name</string>
+    <string name="garageFF8">Password</string>
+    <string name="garageSearchHint">Enter Location</string>
 </resources>
