@@ -8,119 +8,204 @@
     android:background="@drawable/background_animation"
     tools:context=".GarageRegisterForm">
 
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="344dp"
-        android:layout_height="355dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:alpha="0.9"
-        android:background="@android:color/background_light"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
+        <ScrollView
+            android:id="@+id/scrollView2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:alpha="0.9"
+            android:background="@android:color/background_light">
 
-            <EditText
-                android:id="@+id/editText5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/default_gap"
-                android:layout_marginTop="@dimen/default_gap"
-                android:layout_marginEnd="@dimen/default_gap"
-                android:ems="10"
-                android:hint="Name of the garage or service center"
-                android:inputType="textPersonName" />
-
-            <EditText
-                android:id="@+id/editText"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginStart="@dimen/default_gap"
-                android:layout_marginTop="@dimen/default_gap"
-                android:layout_marginEnd="@dimen/default_gap"
-                android:ems="10"
-                android:hint="Address"
-                android:inputType="textPostalAddress" />
+                android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/editText2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="@dimen/default_gap"
-                android:layout_marginTop="@dimen/default_gap"
-                android:layout_marginEnd="@dimen/default_gap"
-                android:ems="10"
-                android:hint="Workshop open time"
-                android:inputType="time" />
+                <TextView
+                    android:id="@+id/formFieldGReg1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_gap"
+                    android:layout_marginTop="@dimen/default_gap"
+                    android:layout_marginEnd="@dimen/default_gap"
+                    android:text="@string/garageFF1"
+                    android:textSize="18sp" />
 
-            <EditText
-                android:id="@+id/editText3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="@dimen/default_gap"
-                android:layout_marginTop="@dimen/default_gap"
-                android:layout_marginEnd="@dimen/default_gap"
-                android:hint="Workshop close time"
-                android:inputType="time" />
+                <EditText
+                    android:id="@+id/garageName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_gap"
+                    android:layout_marginTop="@dimen/default_gap"
+                    android:layout_marginEnd="@dimen/default_gap"
+                    android:ems="10"
+                    android:hint="@string/garageFormField1"
+                    android:inputType="textPersonName" />
 
-            <AutoCompleteTextView
-                android:id="@+id/autoCompleteTextView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="@dimen/default_gap"
-                android:layout_marginTop="@dimen/default_gap"
-                android:layout_marginEnd="@dimen/default_gap"
-                android:hint="Country" />
+                <TextView
+                    android:id="@+id/formFieldGReg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_gap"
+                    android:layout_marginTop="@dimen/default_gap"
+                    android:layout_marginEnd="@dimen/default_gap"
+                    android:text="@string/garageFF2"
+                    android:textSize="18sp" />
 
-            <MultiAutoCompleteTextView
-                android:id="@+id/multiAutoCompleteTextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/default_gap"
-                android:layout_marginTop="@dimen/default_gap"
-                android:layout_marginEnd="@dimen/default_gap"
-                android:hint="Eligible vehicles to service" />
+                <EditText
+                    android:id="@+id/garageAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/default_gap"
+                    android:layout_marginTop="@dimen/default_gap"
+                    android:layout_marginEnd="@dimen/default_gap"
+                    android:ems="10"
+                    android:hint="@string/garageFormField2"
+                    android:inputType="textPostalAddress" />
 
-            <EditText
-                android:id="@+id/editText6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/default_gap"
-                android:layout_marginTop="@dimen/default_gap"
-                android:layout_marginEnd="@dimen/default_gap"
-                android:ems="10"
-                android:hint="Password"
-                android:inputType="textPersonName" />
+                <TextView
+                    android:id="@+id/formFieldGReg3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_gap"
+                    android:layout_marginTop="@dimen/default_gap"
+                    android:layout_marginEnd="@dimen/default_gap"
+                    android:text="@string/garageFF3"
+                    android:textSize="18sp" />
 
-            <EditText
-                android:id="@+id/editText4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/default_gap"
-                android:layout_marginTop="@dimen/default_gap"
-                android:layout_marginEnd="8dp"
-                android:ems="10"
-                android:hint="Password"
-                android:inputType="textPassword" />
+                <EditText
+                    android:id="@+id/garageOpenTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/default_gap"
+                    android:layout_marginTop="@dimen/default_gap"
+                    android:layout_marginEnd="@dimen/default_gap"
+                    android:ems="10"
+                    android:hint="@string/garageFormField3"
+                    android:inputType="time" />
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="395dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="41dp"
-                android:text="Button" />
-        </LinearLayout>
-    </ScrollView>
+                <TextView
+                    android:id="@+id/formFieldGReg4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_gap"
+                    android:layout_marginTop="@dimen/default_gap"
+                    android:layout_marginEnd="@dimen/default_gap"
+                    android:text="@string/garageFF4"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/garageCloseTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/default_gap"
+                    android:layout_marginTop="@dimen/default_gap"
+                    android:layout_marginEnd="@dimen/default_gap"
+                    android:hint="@string/garageFormField4"
+                    android:inputType="time" />
+
+                <TextView
+                    android:id="@+id/formFieldGReg5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_gap"
+                    android:layout_marginTop="@dimen/default_gap"
+                    android:layout_marginEnd="@dimen/default_gap"
+                    android:text="@string/garageFF5"
+                    android:textSize="18sp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/garageCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/default_gap"
+                    android:layout_marginTop="@dimen/default_gap"
+                    android:layout_marginEnd="@dimen/default_gap"
+                    android:hint="@string/garageFormField5" />
+
+                <TextView
+                    android:id="@+id/formFieldGReg6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_gap"
+                    android:layout_marginTop="@dimen/default_gap"
+                    android:layout_marginEnd="@dimen/default_gap"
+                    android:text="@string/garageFF6"
+                    android:textSize="18sp" />
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/garageVehicleType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_gap"
+                    android:layout_marginTop="@dimen/default_gap"
+                    android:layout_marginEnd="@dimen/default_gap"
+                    android:hint="@string/garageFormField6" />
+
+                <TextView
+                    android:id="@+id/formFieldGReg7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_gap"
+                    android:layout_marginTop="@dimen/default_gap"
+                    android:layout_marginEnd="@dimen/default_gap"
+                    android:text="@string/garageFF7"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/garageUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_gap"
+                    android:layout_marginTop="@dimen/default_gap"
+                    android:layout_marginEnd="@dimen/default_gap"
+                    android:ems="10"
+                    android:hint="@string/garageFormField7"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/formFieldGReg8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_gap"
+                    android:layout_marginTop="@dimen/default_gap"
+                    android:layout_marginEnd="@dimen/default_gap"
+                    android:text="@string/garageFF8"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/garagePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_gap"
+                    android:layout_marginTop="@dimen/default_gap"
+                    android:layout_marginEnd="8dp"
+                    android:ems="10"
+                    android:hint="@string/garageFormField8"
+                    android:inputType="textPassword" />
+
+                <Button
+                    android:id="@+id/btnGarageRegister"
+                    android:layout_width="395dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="41dp"
+                    android:background="@drawable/custom_btn"
+                    android:text="@string/btnGarageRegister" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,9 @@ import android.widget.GridLayout;
 public class MainActivity extends AppCompatActivity {
 
     Button garageBtn;
+    Button emergencyBtn;
+
+
     ConstraintLayout myLayout;
     AnimationDrawable animationDrawable;
 
@@ -36,6 +39,20 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,SubMenu.class));
             }
         });
+
+        emergencyBtn = (Button) findViewById(R.id.buttonEmergency);
+        emergencyBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,emergency_servics_search.class));
+
+            }
+
+
+
+        });
+
+
 
     }
 }

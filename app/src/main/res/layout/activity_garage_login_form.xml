@@ -4,6 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_animation"
     tools:context=".GarageLoginForm">
 
+    <RelativeLayout
+        android:layout_width="347dp"
+        android:layout_height="603dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="30dp"
+        android:alpha="0.9"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtName"
+            android:layout_alignEnd="@+id/txtName"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="155dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="403dp"
+            android:ems="10"
+            android:hint="@string/garageFormField7"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtName"
+            android:layout_alignEnd="@+id/txtName"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="228dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="330dp"
+            android:ems="10"
+            android:hint="@string/garageFormField8"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="106dp"
+            android:layout_marginBottom="235dp"
+            android:background="@drawable/custom_btn"
+            android:text="Button" />
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
