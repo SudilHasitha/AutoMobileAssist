@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class e_service_centers_proflle extends AppCompatActivity {
+public class Profile_ui extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_e_service_centers_proflle);
+        setContentView(R.layout.activity_profile_ui);
     }
 }

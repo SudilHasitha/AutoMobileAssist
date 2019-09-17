@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/car"
+    tools:context=".Salesmen_Customer">
+
+
+    <ImageView
+        android:id="@+id/customer"
+        android:layout_width="105dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/salemen"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cus" />
+
+
+    <ImageView
+        android:id="@+id/salemen"
+        android:layout_width="105dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="104dp"
+        android:src="@drawable/saleman"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="104dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="40dp"
+        android:background="#43A047"
+        android:onClick="@string/Button4"
+        android:text="Salesmen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salemen" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="102dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:background="#43A047"
+        android:onClick="@string/Button5"
+        android:text="Customer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/customer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

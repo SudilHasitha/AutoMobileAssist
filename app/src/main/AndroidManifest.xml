@@ -9,16 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".e_service_centers_proflle"></activity>
-        <activity android:name=".find_emergency_service" />
-        <activity android:name=".emergencycenter_register" />
-        <activity android:name=".emergencyservicelogin" />
-        <activity android:name=".emergency_servics_search" />
-        <activity android:name=".GarageLoginForm" />
-        <activity android:name=".GarageRegisterForm" />
-        <activity android:name=".GarageSearch" />
-        <activity android:name=".GarageOwnerMenu" />
-        <activity android:name=".SubMenu" />
+        <activity android:name=".view_Vehicles_Customers"></activity>
+        <activity android:name=".Login_Form" />
+        <activity android:name=".Profile_ui" />
+        <activity android:name=".Search_Vehicle" />
+        <activity android:name=".Vehicle_Details_Form" />
+        <activity android:name=".Regtaion_form" />
+        <activity android:name=".Salesmen_Customer" />
+        <activity android:name=".Registaion_or_Login" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

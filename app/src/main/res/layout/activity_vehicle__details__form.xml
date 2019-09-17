@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#189FB3"
+    tools:context=".Vehicle_Details_Form">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="163dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginRight="80dp"
+                android:text="@string/VehicleDetails"
+                android:textColor="#FBFFFB"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="96dp"
+                android:layout_marginLeft="96dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginRight="70dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/OwnerName"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.031"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText9" />
+
+            <EditText
+                android:id="@+id/editText9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="96dp"
+                android:layout_marginLeft="96dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginRight="70dp"
+                android:autoText="true"
+                android:autofillHints="@string/RegNo"
+                android:ems="10"
+                android:hint="@string/RegNo"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.093"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <EditText
+                android:id="@+id/editText11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="96dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginRight="70dp"
+                android:autofillHints="@string/Address"
+                android:ems="10"
+                android:hint="@string/Address"
+                android:inputType="textPostalAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+            <EditText
+                android:id="@+id/editText13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="96dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginRight="70dp"
+                android:ems="10"
+                android:hint="Makers Class"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText11" />
+
+            <EditText
+                android:id="@+id/editText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="96dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginRight="70dp"
+                android:ems="10"
+                android:hint="@string/Vehicle_Class"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText13" />
+
+            <EditText
+                android:id="@+id/editText15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="96dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginRight="70dp"
+                android:ems="10"
+                android:hint="@string/Fuel_use"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText14" />
+
+            <Button
+                android:id="@+id/insert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="96dp"
+                android:layout_marginLeft="96dp"
+                android:layout_marginTop="12dp"
+                android:background="#86E226"
+                android:text="@string/insert"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText16" />
+
+            <Button
+                android:id="@+id/update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginEnd="88dp"
+                android:layout_marginRight="88dp"
+                android:background="#95F036"
+                android:text="@string/update"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText16" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

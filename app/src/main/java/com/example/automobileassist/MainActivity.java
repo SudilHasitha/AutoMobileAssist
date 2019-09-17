@@ -12,10 +12,8 @@ import android.widget.GridLayout;
 
 public class MainActivity extends AppCompatActivity {
 
+    Button salebtn;
     Button garageBtn;
-    Button emergencyBtn;
-
-
     ConstraintLayout myLayout;
     AnimationDrawable animationDrawable;
 
@@ -25,34 +23,28 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         myLayout = findViewById(R.id.myLayout);
+        salebtn = findViewById(R.id.buttonSales);
 
         animationDrawable = (AnimationDrawable) myLayout.getBackground();
         animationDrawable.setEnterFadeDuration(8000);
         animationDrawable.setExitFadeDuration(8000);
         animationDrawable.start();
 
-        garageBtn = (Button)findViewById(R.id.buttonGarage);
 
-        garageBtn.setOnClickListener(new View.OnClickListener() {
+
+
+    }
+    protected void onResume() {
+
+        super.onResume();
+
+        salebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,SubMenu.class));
+                Intent intent = new Intent(MainActivity.this,Salesmen_Customer.class);
+                startActivity(intent);
             }
         });
-
-        emergencyBtn = (Button) findViewById(R.id.buttonEmergency);
-        emergencyBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,emergency_servics_search.class));
-
-            }
-
-
-
-        });
-
-
 
     }
 }

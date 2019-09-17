@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "352978054167",
+    "firebase_url": "https://automobileassist-1f982.firebaseio.com",
+    "project_id": "automobileassist-1f982",
+    "storage_bucket": "automobileassist-1f982.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:352978054167:android:826bc40f587aaf57b78052",
+        "android_client_info": {
+          "package_name": "com.example.automobileassist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "352978054167-stjs7g8h070tuij939qj92ddsac5g0nf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.automobileassist",
+            "certificate_hash": "89ab6490c16d72f81abde273da3289a56ec5f55b"
+          }
+        },
+        {
+          "client_id": "352978054167-7q76vd62qpqk5k0676r528lh56cql2hq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-e3hn5diIswuugCZxXJzbXPD7LQ_-LVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "352978054167-7q76vd62qpqk5k0676r528lh56cql2hq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
