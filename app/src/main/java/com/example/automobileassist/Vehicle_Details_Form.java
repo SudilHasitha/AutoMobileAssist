@@ -35,7 +35,7 @@ public class Vehicle_Details_Form extends AppCompatActivity {
         txtClass = findViewById(R.id.editText13);
         txtVehicleClass = findViewById(R.id.editText14);
         fuelUse = findViewById(R.id.editText15);
-
+//he
         btnInsert = findViewById(R.id.insert);
         btnUpdate = findViewById(R.id.update);
 
